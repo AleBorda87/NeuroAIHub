@@ -1,46 +1,219 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuroAI Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <title>NeuroAI Hub - AI per Psicologi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #f0f4ff 0%, #e6f0ff 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tool-icon {
+            color: #3b82f6;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>NeuroAI Hub</h1>
-        <p>I migliori strumenti di intelligenza artificiale per psicologi moderni</p>
-        <a href="#" class="btn">Scopri i Tool</a> <!-- Inserisci qui il tuo link -->
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="flex justify-center items-center mb-6">
+                <i class="fas fa-brain text-blue-500 text-4xl mr-3"></i>
+                <h1 class="text-4xl font-bold text-gray-800">NeuroAI Hub</h1>
+            </div>
+            <h2 class="text-xl md:text-2xl text-gray-600 mb-8">I migliori strumenti di intelligenza artificiale per psicologi moderni</h2>
+            <a href="#tools" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                Scopri i Tool
+            </a>
+        </div>
     </header>
 
-    <section>
-        <h2>Perché usare l’AI nello studio clinico</h2>
-        <p>L'intelligenza artificiale può aiutare psicologi e psicoterapeuti a risparmiare tempo, automatizzare compiti ripetitivi e creare contenuti più velocemente.</p>
+    <!-- Sezione Perché usare l'AI -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Perché usare l'AI nello studio clinico</h2>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <p class="text-gray-600 mb-6">
+                    L'intelligenza artificiale sta rivoluzionando il modo in cui i professionisti della salute mentale lavorano, offrendo strumenti potenti per ottimizzare tempo e risorse.
+                </p>
+                <p class="text-gray-600 mb-6">
+                    Immagina di poter automatizzare la trascrizione delle tue sedute, organizzare le note cliniche in modo intelligente, generare materiali psicoeducativi in pochi minuti o analizzare grandi quantità di dati per identificare pattern e trend.
+                </p>
+                <p class="text-gray-600">
+                    Con gli strumenti giusti, puoi dedicare più tempo alla relazione terapeutica e meno alle attività amministrative ripetitive, migliorando sia la tua produttività che la qualità del servizio offerto.
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>5 Tool IA consigliati per Psicologi</h2>
-        <ul>
-            <li><strong>Notion AI</strong> – Organizza note cliniche in modo intelligente</li>
-            <li><strong>Otter.ai</strong> – Trascrive sedute e appunti vocali automaticamente</li>
-            <li><strong>Copy.ai</strong> – Crea post e articoli psicoeducativi</li>
-            <li><strong>Mindsum AI</strong> – Chatbot sperimentale per supporto psicologico</li>
-            <li><strong>ChatGPT</strong> – Brainstorming, analisi testuali e creazione materiali</li>
-        </ul>
+    <!-- Sezione 5 Tool IA -->
+    <section id="tools" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">5 Tool IA consigliati per Psicologi</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Notion AI -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-book-open tool-icon"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 ml-3">Notion AI</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Per organizzare le note cliniche in modo smart, creare template personalizzati e gestire la tua pratica in un unico spazio integrato.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Otter.ai -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-microphone tool-icon"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 ml-3">Otter.ai</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Trascrizione automatica delle sedute con riconoscimento del parlato, organizzazione degli appunti e ricerca intelligente nei contenuti.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Copy.ai -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-pen-fancy tool-icon"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 ml-3">Copy.ai</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Genera post per social media, articoli di psicoeducazione, email per i pazienti e altro ancora in pochi secondi.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Mindsum AI -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-robot tool-icon"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 ml-3">Mindsum AI</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Chatbot sperimentale per supporto psicologico basato su AI, utile per triage iniziale o come strumento complementare.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- ChatGPT -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-comments tool-icon"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 ml-3">ChatGPT</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Per brainstorming clinico, analisi di testi, creazione di materiali terapeutici e risposte a domande complesse.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Bonus Card -->
+                <div class="bg-blue-50 rounded-xl shadow-md overflow-hidden card-hover border border-blue-100">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-lightbulb tool-icon text-blue-500"></i>
+                            <h3 class="text-xl font-semibold text-gray-800 ml-3">Altri strumenti</h3>
+                        </div>
+                        <p class="text-gray-600">
+                            Esplora continuamente nuove soluzioni AI. Il settore è in rapida evoluzione e ogni mese emergono nuovi strumenti utili.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Mini guida gratuita</h2>
-        <form>
-            <input type="email" placeholder="La tua email">
-            <button type="submit">Invia</button>
-        </form>
-        <!-- Questo form è statico. L'acquirente può collegarlo a Mailchimp, Tally, ecc. -->
+    <!-- Mini guida gratuita -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 gradient-bg">
+        <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="p-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Vuoi una guida gratuita su come usare l'AI nel tuo studio?</h2>
+                <p class="text-gray-600 mb-6">Lascia la tua email per ricevere la nostra guida pratica con:</p>
+                <ul class="list-disc pl-5 text-gray-600 mb-6">
+                    <li class="mb-2">Come integrare l'AI nella tua pratica quotidiana</li>
+                    <li class="mb-2">Comparazione dei migliori tool per psicologi</li>
+                    <li class="mb-2">Esempi pratici e casi d'uso</li>
+                    <li>Considerazioni etiche e limiti dell'AI in psicologia</li>
+                </ul>
+                <form class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="La tua email professionale" class="flex-grow px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+                        Invia
+                    </button>
+                </form>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>© 2025 NeuroAI Hub – Semplifica il tuo lavoro, potenzia il tuo studio</p>
+    <!-- Call to Action finale -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-blue-600 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Inizia a usare l'AI nel tuo lavoro clinico</h2>
+            <p class="text-xl mb-8 opacity-90">Risparmia ore di lavoro ogni settimana e concentrati su ciò che conta davvero: i tuoi pazienti.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="bg-white text-blue-600 hover:bg-gray-100 font-medium py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                    Scarica la guida
+                </a>
+                <a href="#" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 font-medium py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105">
+                    Contattaci per una consulenza gratuita
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-6 lg:px-8 bg-gray-800 text-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <i class="fas fa-brain text-blue-400 text-2xl mr-3"></i>
+                <span class="text-xl font-semibold">NeuroAI Hub</span>
+            </div>
+            <div class="text-center md:text-right">
+                <p class="text-gray-400">© 2025 NeuroAI Hub – Semplifica il tuo lavoro, potenzia il tuo studio</p>
+            </div>
+        </div>
     </footer>
-</body>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Alecs87/sito-neuro" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
 </html>
